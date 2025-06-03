@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Sayang</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styleyuni.css" />
+</head>
+<body>
+
+<button id="toggleModeBtn">🌗 Mode</button>
+
+<div class="dark-mode-overlay"></div>
+
+  <div class="container" id="mainPage">
+    <div id="typing-text">Selamat Ulang Tahun, Sayangku! </div>
+    <img src="Yunyun3.jpg" alt="Foto Pacar" class="photo" />
+    <p id="full-message">
+  <b>Untuk perempuannnkuuuu terindahhhh yang sedang bertambahhh usia hariii iniii,</b><br>
+
+  <b>Selamattt ulanggg tahunnn, sayangggggggg.</b><br>
+  
+  Hari ini kamu bertambah umur tepatnya di 27 tahun. Aku tahu, usia hanyalah angka, tapi di balik angka itu ada begitu banyak cerita, pelajaran, dan kekuatan yang kamu simpan rapat-rapat di dalam hatimu.<br>
+
+  Dan aku bangga, sangat bangga, bisa jadi bagian dari tahun ini—tahun di mana aku lihat kamu bertumbuh, tertawa, kadang menangis, tapi tetap tegar menjalani semuanya.<br>
+
+  Kita sudah berjalan bersama lebih dari satu tahun. Rasanya seperti baru kemarin aku mengenalmu, tapi di saat yang sama, seolah aku sudah mengenalmu jauh lebih lama dari waktu yang bisa dihitung.<br>
+
+  Dari awal perkenalan kita yang penuh tanya, sampai sekarang—di mana kita mulai mengerti bahasa satu sama lain tanpa banyak kata.<br>
+
+  Semua momen itu masih tersimpan rapi di kepalaku: tawa kecilmu, cara kamu ngomel manja, saat kamu sedang lelah, dan suara kamu manja ke aku yang selalu membuat segalanya terasa lebih ringan.<br>
+
+  Hubungan kita bukan selalu tentang hal-hal manis. Ada kalanya kita bertengkar, saling diam, merasa jenuh, atau tidak sepaham.<br>
+
+  Tapi justru lewat semua itu, aku sadar: aku ingin belajar mencintaimu, bukan hanya saat semuanya mudah, tapi juga saat semuanya terasa rumit.<br>
+
+  Karena kamu layak dicintai dengan sepenuh hati, bukan hanya untuk sisi indahmu, tapi juga untuk bagian dirimu yang rapuh, keras kepala, dan manusiawi.<br>
+
+  Di ulang tahunmu yang ke-27 ini, aku tidak ingin memberimu janji-janji manis. Aku hanya ingin jadi seseorang yang terus tumbuh bersamamu.<br>
+
+  Menemani langkahmu, mendukung impianmu, dan mencintaimu bukan hanya ketika kamu sedang bersinar, tapi juga saat kamu merasa berantakan.<br>
+
+  Semoga tahun ini membawa lebih banyak hal baik untukmu. Semoga kamu lebih dekat dengan mimpi-mimpimu,<br>
+
+  dan semoga apa pun yang kamu cari dalam hidup—kedamaian, kebahagiaan, cinta—selalu kamu temukan, termasuk di pelukan kecil yang kusebut rumah untukmu.<br>
+
+  Terima kasih karena sudah memilihku untuk ada di sisimu. Terima kasih karena sudah jadi tempat pulang terbaik yang pernah aku temui.<br>
+
+  Aku mencintaimu. Hari ini, besok, dan seterusnya.<br>
+
+  <b>Selamat ulang tahun, cintaku.</b><br>
+
+  Dengan penuh cinta,<br>
+
+  <b>Vino</b>
+</p>
+    <button id="showMomentsBtn">Moment Kita</button>
+  </div>
+
+  <div class="container" id="moments">
+    <h2>Momen Perempuanku Selama Bareng Aku</h2>
+
+    <div class="gallery">
+      <div class="gallery-item"><img src="Yunyun.jpg" alt="Momen 1" /></div>
+      <div class="gallery-item"><img src="Yunyun2.jpg" alt="Momen 2" /></div>
+      <div class="gallery-item"><img src="Yunyun3.jpg" alt="Momen 3" /></div>
+      <div class="gallery-item"><img src="Yunyun4.jpg" alt="Momen 4" /></div>
+      <div class="gallery-item"><img src="Yunyun5.jpg" alt="Momen 5" /></div>
+      <div class="gallery-item"><img src="Yunyun6.jpg" alt="Momen 6" /></div>
+      <div class="gallery-item"><img src="Yunyun7.jpg" alt="Momen 7" /></div>
+      <div class="gallery-item"><img src="Yunyun8.jpg" alt="Momen 8" /></div>
+      <div class="gallery-item"><img src="Yunyun9.png" alt="Momen 9" /></div>
+      <div class="gallery-item"><img src="Yunyun10.png" alt="Momen 10" /></div>
+      <div class="gallery-item"><img src="Yunyun11.jpg" alt="Momen 10" /></div>
+      <div class="gallery-item"><img src="Yunyun12.jpg" alt="Momen 10" /></div>
+      <div class="gallery-item">
+  <div class="gallery-photo">
+    <img src="Pertama Ketemu.jpg" alt="momen pertama">
+  </div>
+  <div class="gallery-caption">
+    Saat kita pertama kali kenal, aku langsung terpanah yangg melihat foto ini yg kamu kirim waktu kenalan awal 😩😫  .
+  </div>
+</div>
+      <!-- Bisa tambah foto lain di sini -->
+    </div>
+
+    <button id="backBtn">Kembali ke Halaman Utama</button>
+  </div>
+
+  <script>
+    const showBtn = document.getElementById('showMomentsBtn');
+    const backBtn = document.getElementById('backBtn');
+    const mainPage = document.getElementById('mainPage');
+    const moments = document.getElementById('moments');
+
+    showBtn.addEventListener('click', () => {
+      mainPage.style.display = 'none';
+      moments.style.display = 'block';
+      window.scrollTo(0, 0);
+    });
+
+    backBtn.addEventListener('click', () => {
+      moments.style.display = 'none';
+      mainPage.style.display = 'block';
+      window.scrollTo(0, 0);
+    });
+  </script>
+
+  <script>
+  
+
+  // Toggle Mode Gelap/Terang
+  const toggleBtn = document.getElementById('toggleModeBtn');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+
+  // Animasi ketikan
+  const typingText = document.getElementById("typing-text");
+  const originalText = typingText.textContent;
+  let index = 0;
+  typingText.textContent = "";
+  function typeEffect() {
+    if (index < originalText.length) {
+      typingText.textContent += originalText.charAt(index);
+      index++;
+      setTimeout(typeEffect, 100);
+    }
+  }
+  typeEffect();
+</script>
+
+</body>
+</html>
